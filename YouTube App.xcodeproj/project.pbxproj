@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A7D7E45120799F250079A651 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D7E45020799F250079A651 /* VideoCell.swift */; };
+		A7D7E4542079C33E0079A651 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D7E4532079C33E0079A651 /* MenuBar.swift */; };
 		A7F803282076D35E00969BA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F803272076D35E00969BA1 /* AppDelegate.swift */; };
 		A7F8032A2076D35E00969BA1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F803292076D35E00969BA1 /* HomeViewController.swift */; };
 		A7F8032D2076D35E00969BA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F8032B2076D35E00969BA1 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		A7D7E45020799F250079A651 /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		A7D7E4532079C33E0079A651 /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
 		A7F803242076D35E00969BA1 /* YouTube App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YouTube App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7F803272076D35E00969BA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7F803292076D35E00969BA1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +43,7 @@
 			isa = PBXGroup;
 			children = (
 				A7D7E45020799F250079A651 /* VideoCell.swift */,
+				A7D7E4532079C33E0079A651 /* MenuBar.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			files = (
 				A7F8032A2076D35E00969BA1 /* HomeViewController.swift in Sources */,
 				A7F803282076D35E00969BA1 /* AppDelegate.swift in Sources */,
+				A7D7E4542079C33E0079A651 /* MenuBar.swift in Sources */,
 				A7D7E45120799F250079A651 /* VideoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

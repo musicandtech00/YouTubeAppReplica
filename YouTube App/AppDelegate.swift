@@ -24,15 +24,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = UINavigationController(rootViewController: HomeViewController(collectionViewLayout: layout))
         
         UINavigationBar.appearance().barTintColor = UIColor(red: 230/255, green: 32/255, blue: 31/255, alpha: 1)
+       
+        //get rid of black line under navigation 
+        UINavigationBar.appearance().shadowImage = UIImage()
+        UINavigationBar.appearance().setBackgroundImage(UIImage(),for: .default)
+    
 
         UIApplication.shared.statusBarStyle = .lightContent
+        
 
-//        let statusBarBackgroundView = UIView()
-//        statusBarBackgroundView.backgroundColor =  UIColor.purple//UIColor(red: 194/255, green: 31/255, blue: 31/255, alpha: 0)
-//        window?.addSubview(statusBarBackgroundView)
-//
-//        window?.addConstraintsWithFormat(format: "H:|[v0]|", views: statusBarBackgroundView)
-//        window?.addConstraintsWithFormat(format: "V:|[v0(50)]", views: statusBarBackgroundView)
+        
+        //Statusbar color
+        let statusBarBackgroundView = UIView()
+        statusBarBackgroundView.translatesAutoresizingMaskIntoConstraints = false
+        statusBarBackgroundView.backgroundColor = UIColor.purple
+        window?.addSubview(statusBarBackgroundView)
+
+        window?.addConstraintsWithFormat(format: "H:|[v0]|", views: statusBarBackgroundView)
+        window?.addConstraintsWithFormat(format: "V:|[v0(20)]", views: statusBarBackgroundView)
         return true
     }
 

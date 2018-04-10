@@ -12,7 +12,7 @@ class VideoCell: UICollectionViewCell {
     
         override init(frame: CGRect) {
             super.init(frame: frame)
-            
+            //comment
             setupView()
         }
         
@@ -32,7 +32,7 @@ class VideoCell: UICollectionViewCell {
             //Horizontal constraints
             addConstraintsWithFormat(format: "H:|-16-[v0]-16-|", views: thumbNailImageView)
             addConstraintsWithFormat(format: "H:|[v0]|", views: seperatorVIew)
-            addConstraintsWithFormat(format: "H:|-16-[v0(44)]|", views: userProfileImageView)
+            addConstraintsWithFormat(format: "H:|-16-[v0(44)]", views: userProfileImageView)
             
             //vertical constraints
             addConstraintsWithFormat(format: "V:|-16-[v0]-8-[v1(44)]-16-[v2(1)]|", views: thumbNailImageView,userProfileImageView,seperatorVIew)
@@ -53,7 +53,7 @@ class VideoCell: UICollectionViewCell {
             
             //the subtitletextview constraints
             //top constraints
-            addConstraint(NSLayoutConstraint(item: subTitleTextView, attribute: .top, relatedBy:.equal, toItem: titleLabel, attribute: .bottom, multiplier: 1, constant: 4))
+            addConstraint(NSLayoutConstraint(item: subTitleTextView, attribute: .top, relatedBy:.equal, toItem: thumbNailImageView, attribute: .bottom, multiplier: 1, constant: 4))
             //left constraint
             addConstraint(NSLayoutConstraint(item: subTitleTextView, attribute: .left, relatedBy: .equal, toItem: userProfileImageView, attribute: .right, multiplier: 1, constant: 8))
             //right constraint

@@ -25,9 +25,29 @@ class HomeViewController: UICollectionViewController,UICollectionViewDelegateFlo
         titleLabel.textColor = UIColor.white
         navigationItem.titleView = titleLabel
 
-        
+       
+        setUpMenuBar()
         print("the width is \(view.bounds.width) and the hight is \(view.bounds.height)")
         
+    }
+    
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidLoad()
+//        setUpMenuBar()
+//    }
+    
+    let menuBar: MenuBar = {
+        let menu = MenuBar()
+        return menu
+    }()
+//
+//
+//
+    func setUpMenuBar(){
+        view.addSubview(menuBar)
+        view.addConstraintsWithFormat(format: "H:|[v0]|", views: menuBar)
+        view.addConstraintsWithFormat(format: "V:|[v0(50)]", views: menuBar)
+
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
